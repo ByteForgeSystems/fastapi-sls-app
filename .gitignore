@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+venv/
+build/
+dist/
+*.egg-info/
+
+# Serverless
+.serverless/
+.aws-sam/
+.serverless_plugins/
+serverless-output.txt
+serverless-*.log
+serverless.yml.backup
+serverless.yml.old
+serverless.yml.tmp
+.serverless/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+
+# Logs
+*.log
+
+# Others
+*.sqlite3
+*.db
