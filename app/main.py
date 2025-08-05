@@ -13,7 +13,7 @@ print(f"OpenAPI prefix: {openapi_prefix}")
 
 
 
-app = FastAPI(docs_url=None)
+app = FastAPI(docs_url=None, openapi_prefix=openapi_prefix)
 
 # Add CORS middleware
 app.add_middleware(
@@ -84,8 +84,10 @@ async def get_docs(request: Request):
     print(f"Request path: {request.url.path}")
     print(f"OpenAPI prefix: {openapi_prefix}")
     # Use the openapi_prefix to generate the correct URL for OpenAPI schema
+    # Set openapi_url to include stage if present
+    openapi_url = f"/{STAGE}/openapi.json" if STAGE else "/openapi.json"
     return get_swagger_ui_html(
-        openapi_url=openapi_prefix+"/openapi.json",
+        openapi_url=openapi_url,
         title="FastAPI + Serverless Docs",
         swagger_ui_parameters={"defaultModelsExpandDepth": -1},
     )
