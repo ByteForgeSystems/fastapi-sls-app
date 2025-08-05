@@ -1,6 +1,8 @@
 service: fastapi-sls-app-2
 
 provider:
+  environment:
+    STAGE: ${opt:stage, 'dev'}
   name: aws
   runtime: python3.12
   region: us-east-1
