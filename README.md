@@ -32,6 +32,8 @@ This project demonstrates a FastAPI application deployed using AWS Lambda and AP
    ```bash
    npm install serverless-python-requirements serverless-apigw-binary  # for binary support
    ```  
+
+   ```bash 
    npm install serverless-python-requirements
    ```
 
