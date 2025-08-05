@@ -4,7 +4,7 @@ This project demonstrates a FastAPI application deployed using AWS Lambda and AP
 
 ## Prerequisites
 - Python 3.12
-- Node.js & npm
+- Node.js (18 or up) & npm
 - Serverless Framework (`npm install -g serverless@3.39.0`)
 - AWS CLI configured with your credentials
 
