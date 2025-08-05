@@ -30,7 +30,9 @@ This project demonstrates a FastAPI application deployed using AWS Lambda and AP
 
 1. **Install Serverless plugins:**
    ```bash
-   npm install serverless-python-requirements serverless-apigw-binary
+   npm install serverless-python-requirements serverless-apigw-binary  # for binary support
+   ```  
+   npm install serverless-python-requirements
    ```
 
 2. **Deploy using Serverless Framework:**
